@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Raleway', sans-serif;
+  src: url(../fonts/Raleway-Medium.ttf);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  line-height: 7rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem 2rem;
+  align-items: center;
+  padding-inline: 10rem}
+
+.card-container .card {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: whitesmoke;
+  border-radius: 1%;
+}
+
+.card-container .card h2 {
+  display: flex;
+  justify-content: center;
+  line-height: 3rem;
+  font-size: 1.2rem;
+  max-height: 50px;
+  overflow: hidden;
+}
+
+.card-container .card p {
+  max-height: 3.8rem;
+  font-size: 1rem;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  
+}
+
+.card img{
+  max-width: 300px;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10%;
+  transition: 0.5s ease;
+}
+
+.card img:hover {
+  scale: 1.1;
+  transition: 0.5s ease;
+}
